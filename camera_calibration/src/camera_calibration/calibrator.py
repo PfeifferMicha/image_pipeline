@@ -1386,7 +1386,7 @@ class StereoCalibrator(Calibrator):
                 scrib_src = rundistorted.copy()
                 scrib_src[:,:,0] /= x_scale
                 scrib_src[:,:,1] /= y_scale
-                if lboard.pattern == "charuco":
+                if rboard.pattern == "charuco":
                     cv2.aruco.drawDetectedCornersCharuco(rscrib, scrib_src, rids)
                 else:
                     cv2.drawChessboardCorners(rscrib, (rboard.n_cols, rboard.n_rows), scrib_src, True)
