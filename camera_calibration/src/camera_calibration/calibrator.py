@@ -1143,8 +1143,8 @@ class StereoCalibrator(Calibrator):
                             _lipts.append(lc)
                             _ripts.append(rc)
                             _opts.append(b.charuco_board.chessboardCorners[li])
-                # Check if at least 4 points visible (todo: check if not in a line)
-                if (len(_lipts) > 3):
+                # Check if at least 6 points visible (DLT algorithm needs at least 6 points for pose estimation)
+                if (len(_lipts) > 5):
                     lipts.append(numpy.array(_lipts))
                     ripts.append(numpy.array(_ripts))
                     opts.append(numpy.array(_opts))
