@@ -1,0 +1,3 @@
+python3 camera_calibration/nodes/cameracalibrator.py --pattern charuco --size 10x14 --aruco_dict 4x4_250 --charuco_marker_size 0.0105 --square 0.01693 left:=/stereo/fullscale/left/image_raw left_camera:=/stereo/fullscale/left right:=/stereo/fullscale/right/image_raw right_camera:=/stereo/fullscale/right
+
+#python3 camera_calibration/nodes/cameracalibrator.py --pattern charuco --size 10x14 --aruco_dict 4x4_250 --charuco_marker_size 0.0105 --square 0.01693 left:=/blackmagic_camera_node/fullscale/left/image_raw left_camera:=/blackmagic_camera_node/fullscale/left right:=/blackmagic_camera_node/fullscale/right/image_raw right_camera:=/blackmagic_camera_node/fullscale/right
